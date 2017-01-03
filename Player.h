@@ -2,28 +2,33 @@
 #define PLAYER_H
 #include "Card.h"
 
+/*
+	Player: It is the class representing the players, this class has a "hand" of cards which are automatically 
+	added to the score of the player in question.
+*/
+
 class Player
 {
  	private:
-	  Card * man[12]; // Mano cantidad de cartas maximas en la mano de un jugador?? 
-	  int cCards;//cantidad de Cards
-	  int suma;
-	  int ganadas;
-	  char nombre[20];
-	  bool plantado;
+	  Card * hand[12];
+	  int nCards;//Number of Cards
+	  int total;
+	  char name[20];
+	  bool stay;
 	public:
 	  Player();
 	  //~Player();
-	  void setName(char name[20]){strcpy(nombre,name);}
-	  void darCard(Card & a);
-	  char * getName(){return nombre;}
-	  int getCCards(){return cCards;}
-	  void sumar();
-	  int getGanar(){return ganadas;}
-	  int getSuma(){sumar();return suma;}
-	  bool getPlantado(){return plantado;}
-	  bool setPlantado(bool a){plantado=a;}
+	  static const int PLAYERS = 4;
+	  void setName(char name[20]){strcpy(this->name,name);}
+	  void deliverCards(Card & a);
+	  char * getName(){return name;}
+	  int getnCards(){return nCards;}
+	  void toAdd();
+	  int getTotal(){toAdd();return total;}
+	  bool getStay(){return stay;}
+	  bool setStay(bool a){stay=a;}
 	  void reset();
+	  bool gameIsFinished();
 };
 
 #endif

@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg1252\deff0\uc1
+{\fonttbl
+{\f0\fnil\fcharset0\fprq0\fttruetype Times New Roman;}
+{\f1\fnil\fcharset0\fprq0\fttruetype Liberation Sans;}
+{\f2\fnil\fcharset0\fprq0\fttruetype Courier New;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green255\blue255;}
+{\stylesheet
+{\s6\fi-431\li720\sbasedon28\snext28 Contents 1;}
+{\s7\fi-431\li1440\sbasedon28\snext28 Contents 2;}
+{\s1\fi-431\li720 Arrowhead List;}
+{\s27\fi-431\li720\sbasedon28 Lower Roman List;}
+{\s29\tx431\sbasedon20\snext28 Numbered Heading 1;}
+{\s30\tx431\sbasedon21\snext28 Numbered Heading 2;}
+{\s12\fi-431\li720 Diamond List;}
+{\s9\fi-431\li2880\sbasedon28\snext28 Contents 4;}
+{\s8\fi-431\li2160\sbasedon28\snext28 Contents 3;}
+{\s31\tx431\sbasedon22\snext28 Numbered Heading 3;}
+{\s32\fi-431\li720 Numbered List;}
+{\s15\sbasedon28 Endnote Text;}
+{\*\cs14\fs20\super Endnote Reference;}
+{\s4\fi-431\li720 Bullet List;}
+{\s5\tx1584\sbasedon29\snext28 Chapter Heading;}
+{\s35\fi-431\li720 Square List;}
+{\s11\fi-431\li720 Dashed List;}
+{\s22\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 3;}
+{\s37\fi-431\li720 Tick List;}
+{\s24\fi-431\li720 Heart List;}
+{\s40\fi-431\li720\sbasedon32 Upper Roman List;}
+{\s39\fi-431\li720\sbasedon32 Upper Case List;}
+{\s16\fi-288\li288\fs20\sbasedon28 Footnote;}
+{\s19\fi-431\li720 Hand List;}
+{\s18\fs20\sbasedon28 Footnote Text;}
+{\s20\sb440\sa60\f1\fs34\b\sbasedon28\snext28 Heading 1;}
+{\s21\sb440\sa60\f1\fs28\b\sbasedon28\snext28 Heading 2;}
+{\s10\qc\sb240\sa120\f1\fs32\b\sbasedon28\snext28 Contents Header;}
+{\s23\sb440\sa60\f1\fs24\b\sbasedon28\snext28 Heading 4;}
+{\s28\f0\fs24 Normal;}
+{\s26\fi-431\li720\sbasedon32 Lower Case List;}
+{\s2\li1440\ri1440\sa120\sbasedon28 Block Text;}
+{\s33\f2\sbasedon28 Plain Text;}
+{\s34\tx1584\sbasedon29\snext28 Section Heading;}
+{\s25\fi-431\li720 Implies List;}
+{\s3\fi-431\li720 Box List;}
+{\s36\fi-431\li720 Star List;}
+{\*\cs17\fs20\super Footnote Reference;}
+{\s38\fi-431\li720 Triangle List;}
+{\s13\fi-288\li288\sbasedon28 Endnote;}}
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\*\rdf}{\info\uc1{\author slaush}}\deftab720\viewkind1\paperw11905\paperh16837\margl1440\margr1440\widowctrl
+\sectd\sbknone\colsx360\pgncont\ltrsect
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch Explanation of Makefile:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\abinodiroverride\ltrch Variable}{\s28\f0\fs24\b\lang1024{\*\listtag0}:}{\s28\f0\fs24\lang1024{\*\listtag0} }{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch They are defined using the following format:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch name = data}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch In this way, the use of the makefiles is simplified. To get the value, the variable is enclosed between parentheses and with the character $ at the beginning, in this case all the instances of $(name) will be replaced by data. For example, the following definition, used in my makefile:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch CC = g++}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch CFLAGS = -g -02}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch OBJ = black.o Card.o Player.o}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch $(CC) $(CFLAGS) -o black $(OBJ)}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch It is interpreted as:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch g++ -g -02 -o black }{\s28\f0\fs24\lang0{\*\listtag0}black.o Card.o Player.o}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\abinodiroverride\ltrch Explicit rules:}{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch These indicate to the make what files depend on of others files, as well as the commands required to compile a file in particular. Its format is:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch dependentFile: requiredFiles}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch                commands  # (a comment) Note: Exists a TAB before any command.}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch For example:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch main: main.c functions.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch               gcc -o main main.c funtions.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch The first line says that to create the dependentFile \'abmain\'bb, must exists \'abmain.c\'bb and \'abfunctions.h\'bb, and to create it, it must execute the second line command.}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch (At the end, I will explain the example of our code).}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\abinodiroverride\ltrch Implicit rule:}{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs28\b\ul\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch These dont indicate the commands to execute, }{\s28\f0\fs24\lang1024{\*\listtag0}but make uses the suffixes (extensions of the files) to determine what commands run. For example:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch functions.o: functions.c functions.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch So... for a ending example, lets see my code:}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch # Variables}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch OBJ = black.o Card.o Player.o}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch # Explicit rules}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch all: $(OBJ)}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch \tab $(CC) $(CFLAGS) -o black $(OBJ)}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch # Implicit rules}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch Card.o: Card.cpp Card.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch Player.o: Player.cpp Player.h Card.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch black.o: black.cpp Card.h Player.h}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch -We have the variable \'abOBJ\'bb, that represents the .o files.}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch -The Explicit rules, that indicates that to build \'aball\'bb, It needs  the \'ab.o\'bb files, that is to say, the variable \'abOBJ\'bb.}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch - And, the Implicit rules says what we need to create those .o files (that of course, the corresponding .cpp and .h files)}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch To carry out the actions, just run: }{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch $ make}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch Which run the first rule that is, all, which will compile the programs defined in the variable $(OBJECT). If is wanted that is running the tasks of the rule clean, is should run}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch $make clean}{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\itap0{\s28\f0\fs24\lang1024{\*\listtag0}\abinodiroverride\ltrch and all the new files and the exe will be erased. Its like a reset}{\s28\f0\fs24\lang1024{\*\listtag0}\par}}

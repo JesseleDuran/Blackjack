@@ -1,30 +1,39 @@
 #ifndef CARD_H
 #define CARD_H
 
-enum pinta{trebol=1,corazon=2,pica=3,diamante=4,nada=-1};
+/*
+  Card: It is the class that represents the cards of the game (cards of poker), also, It is the responsible 
+  to perform the correct operations for the sum of cards in BlackJack.
+*/
+
+enum suit{club=1,heart=2,spade=3,diamond=4,nothing=-1};
 class Card
 {
-  pinta pintas;
+  suit suits;
   int number;
   bool inUse;
+  
 public:
-  Card(int n=-1, pinta p = nada) : number(n),pintas(p), inUse(false) {}
+  static const int CANT_MAXIMUN_CARDS = 52;
 
-  void setCard(int numero,pinta pintica);
+  static const int MAXIMUN_SUIT = 13;
+
+  Card(int n=-1, suit p = nothing) : number(n),suits(p), inUse(false) {}
+
+  void setCard(int numero,suit otherSuit);
   
-  pinta getPinta(){return pintas;}
+  suit getSuit(){return suits;}
   
-  int getNumero(){return number;}
+  int getNumber(){return number;}
   
-  int getNumeroS();
+  int getNumberS();
   
-  int getNumeroS(int n);
+  int getNumberS(int n);
   
-  void setUso();
+  void setUse();
   
-  bool getUso(){return inUse;}
+  bool getUse(){return inUse;}
   //~Card();
-  //ESTO DE ABAJO ES SOBRE ESCRITURA DE OPERADORES!
   int operator+(const Card& a);
   
   int operator=(const Card& a);

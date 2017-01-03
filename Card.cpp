@@ -1,14 +1,14 @@
 #include "Card.h"
 
-int Card::getNumeroS()
+int Card::getNumberS()
 {
-  if(getNumero()>10 && getNumero()<=13)
+  if(getNumber()>10 && getNumber()<=13)
     return 10;
   else
     return number;
 }
 
-int Card::getNumeroS(int n)
+int Card::getNumberS(int n)
 {
   if(n>10 && n<=13)
     return 10;
@@ -16,40 +16,43 @@ int Card::getNumeroS(int n)
     return n;
 }
 
-void Card::setCard(int number,pinta pintica)
+void Card::setCard(int number,suit otherSuit)
 {
   this->number=number;
-  this->pintas=pintica;
+  this->suits=otherSuit;
 }
 
-void Card::setUso()
+void Card::setUse()
 {
   if(this->inUse)
     inUse=false;
 }
 
-
 int Card::operator+(const Card& a)
 {
-	int suma;
-	if(this->getNumeroS()==1 && this->getNumeroS(a.number)==1){
-	  suma=12;
-	  }
-	else if(this->getNumeroS()==1){
-	  if(11+this->getNumeroS(a.number)<=21)
-	    suma=11+this->getNumeroS(a.number);
-	  else
-	    suma=this->getNumeroS()+this->getNumeroS(a.number);
+	int total;
+	if(this->getNumberS()==1 && this->getNumberS(a.number)==1)
+	{
+	  total=12;
 	}
-	else if(this->getNumeroS(a.number)==1){
-	   if(11+this->getNumeroS()<=21)
-	    suma=11+this->getNumeroS();
+	else if(this->getNumberS()==1)
+	{
+	  if(11+this->getNumberS(a.number)<=21)
+	    total=11+this->getNumberS(a.number);
 	  else
-	    suma=this->getNumeroS()+this->getNumeroS(a.number);
+	    total=this->getNumberS()+this->getNumberS(a.number);
 	}
-	else{
-	  suma=this->getNumeroS()+this->getNumeroS(a.number);
+	else if(this->getNumberS(a.number)==1)
+	{
+	   if(11+this->getNumberS()<=21)
+	    total=11+this->getNumberS();
+	  else
+	    total=this->getNumberS()+this->getNumberS(a.number);
+	}
+	else
+	{
+	  total=this->getNumberS()+this->getNumberS(a.number);
 	}
 
-	 return suma;
+	 return total;
 }

@@ -3,56 +3,65 @@
 
 void Player::reset()
 {
-  suma=0;
-  cCards=0;
-  plantado=false;
+  total=0;
+  nCards=0;
+  stay=false;
   for(int i=0; i<12; i++)
   {
-    man[i]=NULL;
+    hand[i]=NULL;
   }
 }
 
-Player::Player(){
-  strcpy(nombre,"  ");
-  suma=0;
-  ganadas=0;
-  cCards=0;
-  plantado=false;
-  for(int i=0; i<12; i++){
-    man[i]=NULL;
+Player::Player()
+{
+  strcpy(name,"  ");
+  total=0;
+  nCards=0;
+  stay=false;
+  for(int i=0; i<12; i++)
+  {
+    hand[i]=NULL;
   }
 }
 
-void Player::darCard(Card &a)
+void Player::deliverCards(Card &a)
 {
-  man[cCards]=&a;
-  cCards++;
+  hand[nCards]=&a;
+  nCards++;
 }
 
-void Player::sumar()
+void Player::toAdd()
 {
-  suma=0;
+  total=0;
   int g;
   int as=0;
-  for(int i=0;i<cCards; i+=2){
-    if(man[i]->getNumeroS()==1)
+  for(int i=0;i<nCards; i+=2)
+  {
+    if(hand[i]->getNumberS()==1)
       as++;
-    if(man[i+1]){
-    g=*man[i]+*man[i+1];
-    if(man[i+1]->getNumeroS()==1)
-      as++;
-  }
+    if(hand[i+1])
+    {
+      g=*hand[i]+*hand[i+1];
+        if(hand[i+1]->getNumberS()==1)
+          as++;
+    }
     else
-      if(man[i]->getNumeroS()==1){
-        if(suma+man[i]->getNumeroS()>21)
+      if(hand[i]->getNumberS()==1)
+      {
+        if(total+hand[i]->getNumberS()>21)
             g=1;
         else
             g=11;
       }
       else
-        g=man[i]->getNumeroS();
-    suma+=g;
+        g=hand[i]->getNumberS();
+    total+=g;
   }
-  if(suma>21)
-    suma=suma-(11*as)+(as);
+  if(total>21)
+    total=total-(11*as)+(as);
+}
+
+bool Player::gameIsFinished()
+{
+  return getTotal()<21 && getStay()!=true;
 }
